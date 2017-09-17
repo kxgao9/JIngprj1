@@ -1,0 +1,94 @@
+/* Print Overrides */
+* {
+	background: none ! important;
+	color: #111 ! important;
+	margin:0;
+}
+
+/* remove unneeded page elements */
+#nav, #header_link, #search_wrapper, .prop, .clear {
+	display: none;
+}
+
+#container {
+	margin:0 auto;
+	text-align:left;
+	width: auto;
+	border:none;
+	background: #FFF;
+}
+
+/* Header */
+
+#header {
+	display: block;
+	width: auto;
+	margin: 0;
+	clear: none;
+	float: none;
+	background: #FFF;
+}
+#sitename {
+	margin-bottom:15px;
+	margin-top:20px;
+	margin-left:0;
+}
+
+/*print only banner */
+#bannerprint {
+	display: block;
+}
+
+/* Content */
+#content {
+	width: 588px;
+	padding: 0;
+	margin-bottom:20px;
+	float: none;
+}
+.pagehead {
+	padding-top: 10px;
+}
+
+.page_break_before {
+	display: block;
+	page-break-before: always;
+}
+
+/*Footer */
+#footer {
+	display: block;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+} 
+.login_link {
+        display: none;
+}
+
+/* News section on home page */
+/* DANT - overflow: hidden and _height: 1% added to fix IE6 and 7 problem with box model height rendering */
+#news {
+	margin:0;
+	padding:0;
+	background-color:none;
+	border:solid 1px #ccc;
+	clear:both;
+	
+	overflow: hidden;
+	_height: 1%;
+}
+.news_row_title {
+	width: 520px;
+	margin-left: 20px;
+	float: left;
+}
+.news_row {
+	width: 250px;
+	margin-left: 20px;
+	margin-top: -10px;
+	padding-bottom: 15px;
+	float: left;
+}
+
