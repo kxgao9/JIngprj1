@@ -1,0 +1,59 @@
+HTML  CSS   Result
+Edit on 
+/* imports */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+/* global */
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 95%;
+  background-color: #fff;
+}
+
+/* grid */
+.row {
+  margin: 0 -10px;
+  margin-bottom: 20px;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding: 10px;
+}
+
+@media all and ( min-width: 600px ) {
+  
+  .col-1-8 {
+    float: left;
+    width: 50%;
+  }
+  .col-1-8:nth-child(4n+1) {
+    clear: both;
+  }
+  
+}
+
+@media all and ( min-width: 960px ) {
+  
+  .col-1-8 {
+    width: 25%;
+  }
+  .col-1-8:nth-child(4n+1) {
+    clear: none;
+  }
+  
+}
